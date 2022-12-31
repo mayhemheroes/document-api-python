@@ -22,7 +22,7 @@ def TestOneInput(data):
     except (XMLSyntaxError, TableauVersionNotSupportedException, ValueError, AttributeError, TableauInvalidFileException):
         return -1
     except TypeError:
-        if random.random() > .99:
+        if random.random() > .9:
             raise
         return -1
 def main():
