@@ -1,0 +1,9 @@
+project: document-api-python
+target: fuzz-twb
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_twb.py
+    libfuzzer: true
+    timeout: 15
